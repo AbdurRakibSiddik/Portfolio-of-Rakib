@@ -1,0 +1,54 @@
+#services{
+    padding: 80px 0;
+    background: #000;
+    .common_head{
+        h2{
+            @include tx(40px, #fff, 500, $ubantu);
+        }
+        p{
+            @include tx(25px, $hover, 500, $ubantu);
+            position: relative;
+            display: inline-block;
+            &::after{
+                @include bl(16px,-65px,50px,2px,#fff)
+         }
+            &::before{
+                @include br(16px,-65px,50px,2px,#fff)
+         }
+
+        }
+    }
+    .services_details{
+        margin-top: 60px;
+        .serv_col{
+            background: #222;
+            border-radius: 5px;
+            padding: 50px 20px;
+            transition: $transi;
+            &:hover{
+                margin-top: -20px;
+            }
+            &:hover{
+                background: $hover;
+                i{
+                    color: #fff;
+                }
+             
+            }
+            i{
+                color: $hover;
+                font-size: 75px;
+                transition: $transi;
+            }
+            h3{
+                @include tx(25px, #fff, 500, $ubantu);
+                margin-top: 10px;
+            }
+            p{
+                @include tx(18px, #fff, 400, $ubantu);
+                margin-top: 10px;
+            }
+        }
+    }
+
+}

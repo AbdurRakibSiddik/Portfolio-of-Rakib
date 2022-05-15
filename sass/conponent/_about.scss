@@ -1,0 +1,132 @@
+#about{
+    padding: 80px 0;
+    .common_head{
+        h2{
+            @include tx(40px, #000, 500, $ubantu);
+        }
+        p{
+            @include tx(25px, $hover, 500, $ubantu);
+            display: inline-block;
+            position: relative;
+            &::after{
+                @include bl(16px,-65px,50px,2px,#000)
+         }
+            &::before{
+                @include br(16px,-65px,50px,2px,#000)
+         }
+
+        }
+    }
+    .about_details{
+        margin-top: 60px;
+        .about_left{
+            position: relative;
+            img{
+                border-radius: 10px;
+                position: relative;
+                transition: $transi;
+              
+            }
+              &:hover{
+                    .overly{
+                        a{
+                            &:first-child{
+                                transform: translateY(20px) !important;
+                                opacity: 1 !important;
+                            }
+                            &:nth-child(2){
+                                transform: translateY(20px) !important;
+                                opacity: 1 !important;
+                            }
+                            &:nth-child(3){
+                                transform: translateY(20px) !important;
+                                opacity: 1 !important;
+                            }
+                            &:last-child{
+                                transform: translateY(20px) !important;
+                                opacity: 1 !important;
+                            }
+                        }
+                    }
+                }
+            .overly{
+                position: absolute;
+                left: 50%;
+                bottom: 70px;
+                transform: translateX(-50%);
+                text-align: center;
+                width: 224px;
+                a{
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                   color: #fff;
+                   border-radius: 50%;
+                   transition: $transi;
+                   margin: 0 5px;
+                   &:first-child{
+                       background: #4267B2;
+                       opacity: 0;
+                       transition:.90s;
+                   }
+                   &:nth-child(2){
+                       background: #00acee;
+                         opacity: 0;
+                       transition:.70s;
+                   }
+                   &:nth-child(3){
+                       background: #F4B400;
+                         opacity: 0;
+                       transition:.50s;
+                   }
+                   &:last-child{
+                       background: #0072b1;
+                         opacity: 0;
+                       transition:.30s;
+                   }
+                   &:hover{
+                       background: #fff;
+                       color: $hover;
+                   }
+                }
+            }
+        }
+        .about_right{
+            margin-top: 10px;
+            margin-left: 50px;
+            h3{
+                @include tx(40px, #000, 600, $ubantu);
+                span{
+                    color: $hover;
+                }
+            }
+            p{
+                @include tx(20px, #444, 400, $ubantu);
+                line-height: 28px;
+                text-align: justify;
+                margin-top: 10px
+
+            }
+           .about_btn{
+               text-align: center;
+            a{
+                
+                @include tx(25px, #fff, 400, $ubantu);
+                padding: 10px 30px;
+                border-radius: 5px;
+                border: 2px solid $hover;
+                background: $hover;
+                margin-top: 20px;
+                line-height: 1;
+                transition: $transi;
+                &:hover{
+                    background: transparent;
+                    color: $hover;
+                }
+            
+        }
+           }
+        }
+    }
+}

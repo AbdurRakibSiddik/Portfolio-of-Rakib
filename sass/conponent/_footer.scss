@@ -1,0 +1,15 @@
+footer {
+    background: #000;
+    padding: 20px 0;
+
+    .foot {
+        p {
+            @include tx(20px, #fff, 500, $ubantu);
+
+            a {
+                @include tx(20px, $hover, 500, $ubantu);
+
+            }
+        }
+    }
+}

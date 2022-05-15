@@ -1,0 +1,30 @@
+
+#banner{
+    padding: 200px 0;
+    h4{
+        @include tx(27px, #fff, 500, $ubantu);
+    }
+    h1{
+        @include tx(75px, #fff, 600, $ubantu);
+        text-transform: uppercase
+    }
+    p{
+        @include tx(40px, #fff, 600, $ubantu);
+        span{
+           color: $hover;
+        }
+    }
+    a{
+        @include tx(25px, #fff, 400, $ubantu);
+        padding: 12px 36px;
+        border-radius: 5px;
+        border: 2px solid $hover;
+        background: $hover;
+        margin-top: 20px;
+        line-height: 1;
+        transition: $transi;
+        &:hover{
+            background: transparent;
+        }
+    }
+}

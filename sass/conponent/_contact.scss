@@ -1,0 +1,148 @@
+#contact {
+    padding: 80px 0;
+
+    .common_head {
+        h2 {
+            @include tx(40px, #000, 500, $ubantu);
+        }
+
+        p {
+            @include tx(25px, $hover, 500, $ubantu);
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                @include bl(16px, -65px, 50px, 2px, #000)
+            }
+
+            &::before {
+                @include br(16px, -65px, 50px, 2px, #000)
+            }
+
+        }
+    }
+
+    .contact_details {
+        margin-top: 60px;
+
+        .contact_col {
+            h3 {
+                @include tx(30px, #000, 600, $ubantu);
+            }
+
+            p {
+                @include tx(18px, #444, 400, $ubantu);
+                margin-top: 10px;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+
+            .con_row {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+
+                i {
+                    color: $hover;
+                    font-size: 30px;
+                }
+
+                .con_info {
+                    margin-left: 20px;
+
+                    h4 {
+                        @include tx(20px, #000, 400, $ubantu);
+
+                        a {
+                            @include tx(20px, #000, 400, $ubantu);
+
+                        }
+                    }
+
+                    h6 {
+                        @include tx(16px, #000, 400, $ubantu);
+
+                        a {
+                            @include tx(16px, #000, 400, $ubantu);
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact_right {
+            h3 {
+                @include tx(30px, #000, 600, $ubantu);
+            }
+
+            ul {
+                margin-top: 10px;
+
+                li {
+                    margin-right: 20px;
+                    width: 48.4%;
+
+                    input {
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        padding: 10px;
+                        width: 100%;
+                        outline: none;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                }
+            }
+
+            .in_sub {
+                margin-top: 20px;
+
+                input {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: 100%;
+                    outline: none;
+                }
+            }
+
+            .in_msm {
+                margin-top: 20px;
+
+                textarea {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: 100%;
+                    outline: none;
+                    resize: none;
+                }
+            }
+
+            .con_btn {
+                text-align: center;
+                button {
+                    @include tx(25px, #fff, 400, $ubantu);
+                    padding: 12px 36px;
+                    border-radius: 5px;
+                    border: 2px solid $hover;
+                    background: $hover;
+                    margin-top: 20px;
+                    line-height: 1;
+                    transition: $transi;
+
+                    &:hover {
+                        background: transparent;
+                        color: $hover;
+                    }
+                }
+            }
+
+        }
+    }
+}

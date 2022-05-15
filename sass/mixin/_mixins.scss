@@ -1,0 +1,24 @@
+@mixin tx($s,$c,$w,$ff){
+    font-size: $s;
+    color: $c;
+    font-weight: $w;
+    font-family: $ff;
+}
+@mixin bl($b,$l,$w,$h,$bg){
+    position: absolute;
+    content: '';
+    bottom: $b;
+    left: $l;
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin br($b,$r,$w,$h,$bg){
+    position: absolute;
+    content: '';
+    bottom: $b;
+    right: $r;
+    width: $w;
+    height: $h;
+    background: $bg;
+}

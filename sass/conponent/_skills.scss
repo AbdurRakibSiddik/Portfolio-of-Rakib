@@ -1,0 +1,59 @@
+#skills {
+    padding: 80px 0;
+
+    .common_head {
+        h2 {
+            @include tx(40px, #000, 500, $ubantu);
+        }
+
+        p {
+            @include tx(25px, $hover, 500, $ubantu);
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                @include bl(16px, -65px, 50px, 2px, #000)
+            }
+
+            &::before {
+                @include br(16px, -65px, 50px, 2px, #000)
+            }
+
+        }
+    }
+
+    .skills_details {
+        margin-top: 60px;
+
+        .skills_left {
+            text-align: left;
+
+            h3 {
+                @include tx(25px, #000, 600, $ubantu);
+            }
+
+            p {
+                @include tx(20px, #444, 400, $ubantu);
+                line-height: 28px;
+                margin-top: 10px;
+            }
+
+            a {
+                @include tx(18px, #fff, 400, $ubantu);
+                padding: 10px 16px;
+                border-radius: 5px;
+                border: 2px solid $hover;
+                background: $hover;
+                margin-top: 20px;
+                line-height: 1;
+                transition: $transi;
+
+                &:hover {
+                    background: transparent;
+                    color: $hover;
+                }
+            }
+        }
+
+    }
+}
